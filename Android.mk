@@ -6,15 +6,15 @@ LOCAL_SRC_FILES:= \
 	AudioRecordTest.cpp
 
 # android 7.1
-LOCAL_SHARED_LIBRARIES := \
+#LOCAL_SHARED_LIBRARIES := \
 	libutils libcutils liblog \
  	libmedia \
 
 # android 10
-# LOCAL_SHARED_LIBRARIES := \
- 	libutils libcutils liblog \
-  	libmedia \
- 	libtinyalsa libaudioclient 
+LOCAL_SHARED_LIBRARIES := \
+	libutils libcutils liblog \
+ 	libmedia \
+	libtinyalsa libaudioclient 
 
 LOCAL_MODULE:= AudioRecordTest
 
